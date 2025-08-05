@@ -8,7 +8,7 @@ session_start();
 
 // -Traitement du formulaire d'ajout de tâche
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Récupération des données du formulaire
+    // -Récupération des données du formulaire
     $titre = $_POST['titre']; // Titre de la tâche
     $description = $_POST['description']; // Description de la tâche
     $categorie_id = $_POST['categorie_id']; // Catégorie sélectionnée

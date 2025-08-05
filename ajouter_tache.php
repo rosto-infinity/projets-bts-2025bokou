@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $statut_id = $_POST['statut_id']; // Statut sélectionné
     // -Récupération de l'ID utilisateur depuis la session (à adapter selon la gestion des utilisateurs)
     $utilisateur_id = $_SESSION['user_id'] ?? 1;
-    // Date de création et de modification (initialement identiques)
+    // -Date de création et de modification (initialement identiques)
     $date_creation = date('Y-m-d');
     $date_moditifation = $date_creation;
 

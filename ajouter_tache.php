@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $description = $_POST['description']; // Description de la tâche
     $categorie_id = $_POST['categorie_id']; // Catégorie sélectionnée
     $statut_id = $_POST['statut_id']; // Statut sélectionné
-    // Récupération de l'ID utilisateur depuis la session (à adapter selon la gestion des utilisateurs)
+    // -Récupération de l'ID utilisateur depuis la session (à adapter selon la gestion des utilisateurs)
     $utilisateur_id = $_SESSION['user_id'] ?? 1;
     // Date de création et de modification (initialement identiques)
     $date_creation = date('Y-m-d');

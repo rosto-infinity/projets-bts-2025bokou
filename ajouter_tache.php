@@ -6,7 +6,7 @@ require 'database.php';
 // -Démarrage de la session pour récupérer l'utilisateur connecté
 session_start();
 
-// Traitement du formulaire d'ajout de tâche
+// -Traitement du formulaire d'ajout de tâche
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupération des données du formulaire
     $titre = $_POST['titre']; // Titre de la tâche

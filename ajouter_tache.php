@@ -3,7 +3,7 @@
 // -Inclusion du fichier de connexion à la base de données
 require 'database.php';
 
-// Démarrage de la session pour récupérer l'utilisateur connecté
+// -Démarrage de la session pour récupérer l'utilisateur connecté
 session_start();
 
 // Traitement du formulaire d'ajout de tâche

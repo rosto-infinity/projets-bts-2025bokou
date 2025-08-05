@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = "<div class='container'><p style='color:#1b5e20;'>Tâche ajoutée.</p></div>";
 }
 
-// Récupérer catégories et statuts pour le formulaire
+// -Récupérer catégories et statuts pour le formulaire
 $categories = $pdo->query("SELECT * FROM categories")->fetchAll();
 $statuts = $pdo->query("SELECT * FROM statut")->fetchAll();
 ?>
@@ -65,7 +65,7 @@ $statuts = $pdo->query("SELECT * FROM statut")->fetchAll();
 </head>
 <body>
 <?php 
-// Affichage du message de confirmation si la tâche a été ajoutée
+// --Affichage du message de confirmation si la tâche a été ajoutée
 if (!empty($message)) echo $message; 
 ?>
 <div class="container">

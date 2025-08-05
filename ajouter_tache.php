@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = "<div class='container'><p style='color:#1b5e20;'>Tâche ajoutée.</p></div>";
 }
 
-// -Récupération de toutes les catégories pour alimenter la liste déroulante du formulaire
+// --Récupération de toutes les catégories pour alimenter la liste déroulante du formulaire
 $categories = $pdo->query("SELECT * FROM categories")->fetchAll();
 // Récupération de tous les statuts pour alimenter la liste déroulante du formulaire
 $statuts = $pdo->query("SELECT * FROM statut")->fetchAll();

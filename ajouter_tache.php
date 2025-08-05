@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $date_creation = date('Y-m-d');
     $date_moditifation = $date_creation;
 
-    // Préparation de la requête d'insertion de la tâche
+    // -Préparation de la requête d'insertion de la tâche
     $sql = "INSERT INTO taches (titre, description, date_creaction, date_moditifation, statut, utilisateur_id, categorie_id, statut_id) VALUES (?, ?, ?, ?, 0, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
     // Exécution de la requête avec les valeurs du formulaire

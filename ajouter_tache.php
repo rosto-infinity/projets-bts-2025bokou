@@ -65,7 +65,7 @@ $statuts = $pdo->query("SELECT * FROM statut")->fetchAll();
 </head>
 <body>
 <?php 
-// --Affichage du message de confirmation si la tâche a été ajoutée
+// --ttAffichage du message de confirmation si la tâche a été ajoutée
 if (!empty($message)) echo $message; 
 ?>
 <div class="container">

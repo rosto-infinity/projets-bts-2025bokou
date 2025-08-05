@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // -Préparation de la requête d'insertion de la tâche
     $sql = "INSERT INTO taches (titre, description, date_creaction, date_moditifation, statut, utilisateur_id, categorie_id, statut_id) VALUES (?, ?, ?, ?, 0, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
-    // Exécution de la requête avec les valeurs du formulaire
+    // -Exécution de la requête avec les valeurs du formulaire
     $stmt->execute([$titre, $description, $date_creation, $date_moditifation, $utilisateur_id, $categorie_id, $statut_id]);
     // Message de confirmation à afficher à l'utilisateur
     $message = "<div class='container'><p style='color:#1b5e20;'>Tâche ajoutée.</p></div>";

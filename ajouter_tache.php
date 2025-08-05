@@ -1,6 +1,6 @@
 <?php
 
-// Inclusion du fichier de connexion à la base de données
+// -Inclusion du fichier de connexion à la base de données
 require 'database.php';
 
 // Démarrage de la session pour récupérer l'utilisateur connecté
